@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Date.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package fr.istic.vv;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>class Date implements Comparable&#60;Date&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;int day;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;int month;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;int year;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;static int[] dayInMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;public Date(int day, int month, int year) throws Exception {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_12'>1</a>
+<span>
+
+1. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (!isValidDate(day, month, year)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;throw new Exception(&#34;The date is not valid&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.day = day;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.month = month;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;this.year = year;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public static boolean isValidDate(int day, int month, int year) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_22'>1</a>
+<span>
+
+1. isValidDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (isLeapYear(year)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;dayInMonth[1] = 29;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;} else {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;&#9;&#9;dayInMonth[1] = 28;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_27'>4</a>
+<span>
+
+1. isValidDate : changed conditional boundary &rarr; KILLED<br/>
+
+2. isValidDate : changed conditional boundary &rarr; KILLED<br/>
+
+3. isValidDate : negated conditional &rarr; KILLED<br/>
+
+4. isValidDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (month &#62; 12 || month&#60;=0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_28'>1</a>
+<span>
+
+1. isValidDate : replaced boolean return with true for fr/istic/vv/Date::isValidDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_31'/>
+31
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_31'>5</a>
+<span>
+
+1. isValidDate : changed conditional boundary &rarr; KILLED<br/>
+
+2. isValidDate : changed conditional boundary &rarr; KILLED<br/>
+
+3. isValidDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+4. isValidDate : negated conditional &rarr; KILLED<br/>
+
+5. isValidDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if (day &#62; dayInMonth[month-1] || day&#60;=0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_32'/>
+32
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_32'>1</a>
+<span>
+
+1. isValidDate : replaced boolean return with true for fr/istic/vv/Date::isValidDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_35'/>
+35
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_35'>1</a>
+<span>
+
+1. isValidDate : replaced boolean return with false for fr/istic/vv/Date::isValidDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public static boolean isLeapYear(int year) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_39'>7</a>
+<span>
+
+1. isLeapYear : replaced boolean return with true for fr/istic/vv/Date::isLeapYear &rarr; KILLED<br/>
+
+2. isLeapYear : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+3. isLeapYear : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+4. isLeapYear : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+
+5. isLeapYear : negated conditional &rarr; KILLED<br/>
+
+6. isLeapYear : negated conditional &rarr; KILLED<br/>
+
+7. isLeapYear : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return ((year % 4 == 0) &#38;&#38; (year % 100 != 0)) || (year % 400 == 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Date nextDate() throws Exception {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_43'>4</a>
+<span>
+
+1. nextDate : changed conditional boundary &rarr; KILLED<br/>
+
+2. nextDate : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. nextDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+4. nextDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(day+1&#62;dayInMonth[this.month-1]) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_44'>1</a>
+<span>
+
+1. nextDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(this.month==12) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_45'>2</a>
+<span>
+
+1. nextDate : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. nextDate : replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;return new Date(1,1,this.year+1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_47'>2</a>
+<span>
+
+1. nextDate : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. nextDate : replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return new Date(1,this.month+1,this.year);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_49'/>
+49
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_49'>2</a>
+<span>
+
+1. nextDate : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. nextDate : replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return new Date(this.day+1,this.month,this.year);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public Date previousDate() throws Exception {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_53'/>
+53
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_53'>3</a>
+<span>
+
+1. previousDate : changed conditional boundary &rarr; KILLED<br/>
+
+2. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. previousDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(this.day-1&#60;=0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_54'>3</a>
+<span>
+
+1. previousDate : changed conditional boundary &rarr; KILLED<br/>
+
+2. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. previousDate : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;if(this.month-1&#60;=0) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_55'>2</a>
+<span>
+
+1. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. previousDate : replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;&#9;return new Date(dayInMonth[11],12,this.year-1);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_57'/>
+57
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_57'>3</a>
+<span>
+
+1. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+3. previousDate : replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;&#9;return new Date(dayInMonth[this.month-2],this.month-1,this.year);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_59'>2</a>
+<span>
+
+1. previousDate : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. previousDate : replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return new Date(this.day-1,this.month,this.year);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public int compareTo(Date other) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_63'>1</a>
+<span>
+
+1. compareTo : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;if(other==null) throw new NullPointerException();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_64'/>
+64
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_64'>4</a>
+<span>
+
+1. compareTo : Replaced integer multiplication with division &rarr; KILLED<br/>
+
+2. compareTo : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. compareTo : Replaced integer multiplication with division &rarr; KILLED<br/>
+
+4. compareTo : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;int dateAsInteger = this.day+this.month*100+this.year*10000;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_65'/>
+65
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_65'>4</a>
+<span>
+
+1. compareTo : Replaced integer multiplication with division &rarr; KILLED<br/>
+
+2. compareTo : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. compareTo : Replaced integer multiplication with division &rarr; KILLED<br/>
+
+4. compareTo : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;int otherdateAsInteger = other.day+other.month*100+other.year*10000;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_66'/>
+66
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_66'>2</a>
+<span>
+
+1. compareTo : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. compareTo : replaced int return with 0 for fr/istic/vv/Date::compareTo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;&#9;return dateAsInteger-otherdateAsInteger;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6b64429e_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDaysAprilCommonYear()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate29DaysFebruaryLeapYear()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays0monthCommonYear()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays13MonthCommonYear()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays0monthCommonYear()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays0monthCommonYear()]</span></span> replaced boolean return with true for fr/istic/vv/Date::isValidDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate0DaysCommonMonthCommonYear()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate32DaysJanuaryCommonYear()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDaysJanuaryCommonYear()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate32DaysJanuaryCommonYear()]</span></span> replaced boolean return with true for fr/istic/vv/Date::isValidDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_35'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isValidDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDaysJanuaryCommonYear()]</span></span> replaced boolean return with false for fr/istic/vv/Date::isValidDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCommonYear()]</span></span> replaced boolean return with true for fr/istic/vv/Date::isLeapYear &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4NotBy100NotBy400()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4By100NotBy400()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate29DaysFebruaryLeapYear()]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCommonYear()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4NotBy100NotBy400()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>isLeapYear<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCommonYear()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextLeapYearFebruaryLastDay()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()]</span></span> replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()]</span></span> replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_49'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>nextDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> replaced return value with null for fr/istic/vv/Date::nextDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_53'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthCommonDay()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFirstMonthfirstDay()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFirstMonthfirstDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFirstMonthfirstDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFirstMonthfirstDay()]</span></span> replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFebruaryFirstDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()]</span></span> replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthCommonDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>previousDate<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthCommonDay()]</span></span> replaced return value with null for fr/istic/vv/Date::previousDate &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_64'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_65'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6b64429e_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6b64429e_66'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testComparePosterior()]</span></span> replaced int return with 0 for fr/istic/vv/Date::compareTo &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>BOOLEAN_FALSE_RETURN</li>
+
+<li class='mutator'>BOOLEAN_TRUE_RETURN</li>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY_MUTATOR</li>
+
+<li class='mutator'>EMPTY_RETURN_VALUES</li>
+
+<li class='mutator'>INCREMENTS_MUTATOR</li>
+
+<li class='mutator'>INVERT_NEGS_MUTATOR</li>
+
+<li class='mutator'>MATH_MUTATOR</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS_MUTATOR</li>
+
+<li class='mutator'>NULL_RETURN_VALUES</li>
+
+<li class='mutator'>PRIMITIVE_RETURN_VALS_MUTATOR</li>
+
+<li class='mutator'>VOID_METHOD_CALL_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNegativeday()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate29DaysFebruaryLeapYear()] (5 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate29DaysFebruaryCommonYear()] (6 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4By100By400()] (6 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthCommonDay()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4By100NotBy400()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCompareAnterior()] (8 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDaysJanuaryCommonYear()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearLastMonthLastDay()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNegativeMonth()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFirstMonthfirstDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextLeapYearFebruaryLastDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:test31DaysAprilCommonYear()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearCommonMonthLastDay()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate31DaysAprilCommonYear()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearFebruaryFirstDay()] (6 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays13MonthCommonYear()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:test29DaysFebruaryLeapYear()] (5 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:test29DaysFebruaryCommonYear()] (15 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateValidDays0monthCommonYear()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthFirstDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testComparenull()] (6 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateNegativeMonth()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleBy4NotBy100NotBy400()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCommonYear()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testNextCommonYearFebruaryLastDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDays13MonthCommonYear()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDaysAprilCommonYear()] (2 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testDivisibleNotBy4By100NotBy400()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDateNegativeday()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousCommonYearCommonMonthCommonDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDaysJanuaryCommonYear()] (3 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:test32DaysJanuaryCommonYear()] (6 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate0DaysCommonMonthCommonYear()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testComparePosterior()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testPreviousLeapYearFebruaryLastDay()] (4 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testCompareEqual()] (8 ms)</li><li>fr.istic.vv.DateTest.[engine:junit-jupiter]/[class:fr.istic.vv.DateTest]/[method:testValidDate32DaysJanuaryCommonYear()] (3 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.5.2
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="fr.istic.vv.DateTest" time="0.119" tests="38" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date\target\test-classes;C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date\target\classes;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\charl\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\charl\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\charl\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18\bin"/>
+    <property name="sun.java.command" value="C:\Users\charl\AppData\Local\Temp\surefire12081699535175314442\surefirebooter17221660745627942359.jar C:\Users\charl\AppData\Local\Temp\surefire12081699535175314442 2022-04-02T19-07-08_538-jvmRun1 surefire441471354570516829tmp surefire_011578577500931857661tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date\target\test-classes;C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date\target\classes;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.2\junit-jupiter-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\charl\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\charl\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\charl\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.2\junit-jupiter-params-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\charl\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\charl"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-03-22"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\charl\AppData\Local\Temp\surefire12081699535175314442\surefirebooter17221660745627942359.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18+36-2087"/>
+    <property name="user.name" value="charl"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\charl\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\charl\AppData\Local\Temp\"/>
+    <property name="java.version" value="18"/>
+    <property name="user.dir" value="C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\VV-ESIR-TP3-main\code\tp3-date"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\pmd-bin-6.43.0\pmd-bin-6.43.0\bin;C:\Program Files\Java\jdk-18;C:\Program Files\Graphviz\bin;C:\Program Files\nodejs\;C:\Users\charl\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\charl\AppData\Local\Programs\Python\Python310\;C:\Users\charl\AppData\Local\Microsoft\WindowsApps;C:\Users\charl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\apache-maven-3.8.4\bin;C:\Program Files\Git\bin;C:\Program Files\CMake\bin;C:\Users\charl\.dotnet\tools;C:\Users\charl\OneDrive\Documents\00Cours\ESIR2\mdi\pmd-bin-6.43.0\pmd-bin-6.43.0\bin;C:\Program Files\Java\jdk-18;C:\Users\charl\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18+36-2087"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="testValidDate29DaysFebruaryLeapYear" classname="fr.istic.vv.DateTest" time="0.051"/>
+  <testcase name="testValidDateValidDays13MonthCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDateValidDaysJanuaryCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNextLeapYearFebruaryLastDay" classname="fr.istic.vv.DateTest" time="0.002"/>
+  <testcase name="test31DaysAprilCommonYear" classname="fr.istic.vv.DateTest" time="0.003"/>
+  <testcase name="testPreviousCommonYearCommonMonthCommonDay" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDate29DaysFebruaryCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="test29DaysFebruaryCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDateValidDays0monthCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testComparenull" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDaysAprilCommonYear" classname="fr.istic.vv.DateTest" time="0.002"/>
+  <testcase name="testPreviousCommonYearCommonMonthFirstDay" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testPreviousLeapYearFebruaryLastDay" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDate0DaysCommonMonthCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNegativeday" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testDivisibleNotBy4By100NotBy400" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testValidDays13MonthCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDaysJanuaryCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testValidDate31DaysAprilCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testComparePosterior" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNextCommonYearLastMonthLastDay" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNextCommonYearFebruaryLastDay" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNextCommonYearCommonMonthCommonDay" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testCommonYear" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testCompareAnterior" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testDivisibleBy4By100By400" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testValidDate32DaysJanuaryCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testPreviousCommonYearFebruaryFirstDay" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testCompareEqual" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNegativeMonth" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testDivisibleBy4NotBy100NotBy400" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testValidDateNegativeMonth" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="testDivisibleBy4By100NotBy400" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testNextCommonYearCommonMonthLastDay" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testPreviousCommonYearFirstMonthfirstDay" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="test29DaysFebruaryLeapYear" classname="fr.istic.vv.DateTest" time="0"/>
+  <testcase name="testValidDateNegativeday" classname="fr.istic.vv.DateTest" time="0.001"/>
+  <testcase name="test32DaysJanuaryCommonYear" classname="fr.istic.vv.DateTest" time="0"/>
+</testsuite>
